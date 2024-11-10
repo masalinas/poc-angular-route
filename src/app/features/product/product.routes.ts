@@ -4,8 +4,8 @@ import { Routes } from '@angular/router';
 import { ProductComponent } from './product.component';
 
 // sub-modules from the product module
-import { ProductFruitComponent } from './sub-modules/fruit';
-import { ProductFishComponent } from './sub-modules/fish';
+import { ProductFruitComponent } from './features/fruit';
+import { ProductFishComponent } from './features/fish';
 
 export const PRODUCT_ROUTES: Routes = [
     {
