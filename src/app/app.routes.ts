@@ -5,7 +5,9 @@ import { HomeComponent, NotFoundComponent } from './features';
 
 export const APP_ROUTES: Routes = [
     { 
-        path: 'home', component: HomeComponent
+        path: 'home',
+        loadComponent: () =>
+            import('./features/home/home.component').then(m => m.HomeComponent)
     },
     {     
         path: 'product',
