@@ -1,8 +1,7 @@
 import { Routes } from '@angular/router';
 
-// main module routes
-import { HomeComponent } from './modules/home';
-import { NotFoundComponent } from './modules/not-found';
+// features module
+import { HomeComponent, NotFoundComponent } from './features';
 
 export const APP_ROUTES: Routes = [
     { 
@@ -11,7 +10,7 @@ export const APP_ROUTES: Routes = [
     {     
         path: 'product',
         loadChildren: () => 
-            import('./modules/product/product.routes').then(m => m.PRODUCT_ROUTES)
+            import('./features/product/product.routes').then(m => m.PRODUCT_ROUTES)
     },
     { 
         path: '',   redirectTo: '/home', pathMatch: 'full'
