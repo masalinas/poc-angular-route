@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 
+//internale module product component
 import { ProductComponent } from './product.component';
 
 // sub-modules from the product module
